@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<HTML>
+   <HEAD>
+      <TITLE>
+         Example Wahoowa 
+      </TITLE>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   </HEAD>
+   
+<BODY>
+	<script type="text/javascript">
+	function click() {
+		document.getElementById("mysubmit").innerHtml = "winston";
+		window.location = "https://s3.amazonaws.com/winston.io/submission.html";
+	}
+	</script>	
+   <H1>Wahoowa Alexa Skill</H1>
+   <P>To further enhance Wahoowa, enter what UVa fact you would like to see added!</P> 
+   <img src="images/wahoowa.png" alt="Wahoowa Icon">
+   <P id="mysubmit"> </P>
+   <a href="http://alexaskillscentral.com/skills/2016/06/08/wahoowa/" target="_blank" >Wahoowa Alexa Skill!</a>
+   <P> </P>   
+   <form action="https://s3.amazonaws.com/wahoosuggestions" method="post" enctype="multipart/form-data" onsubmit='click();'>
+   <input type="hidden" name="Content-Type" value="text/plain" />
+   	<input type="hidden" name="key" value="Suggestions"/>
+   	<input type="hidden" name="success_action_redirect" value="https://s3.amazonaws.com/winston.io/submission.html">
+	<textarea   style="width:300px; height:50px;"rows="5" cols="50%" maxlength="140" name="file" value=""></textarea>
+	<input value="submit" type="submit"/>
+	</form>
+	
+	
+</BODY>
+
+</HTML>
