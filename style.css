@@ -1,11 +1,15 @@
 body {
-    margin: 0;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container {
+    position: absolute;
+    height: 100%;
 }
 
 .top-section {
-    background-color: white;
-    height: 407px;
-    margin: 0 auto;
+    height: 50%;
     position: relative;
 
 }
@@ -30,8 +34,7 @@ body {
 
 .bottom-section {
     background-color:#E6E6E6;
-    height: 406px;
-    margin: 0 auto;
+    height: 50%;
     position: relative;
 }
 
